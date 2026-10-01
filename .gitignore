@@ -1,0 +1,20 @@
+# Godot 4+ specific ignores
+# .godot/ 是编辑器缓存与导入产物，必须忽略（包含 .godot/imported 下的生成资源）
+.godot/
+
+# 自动生成的翻译文件（由 CSV 自动生成）
+*.translation
+
+# Mono / C# 专属（本项目为 GDScript，保留以防将来启用 C#）
+.mono/
+data_*/
+mono_crash.*.json
+
+# 工具 / 系统专属垃圾文件
+.directory
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Android 导出构建产物（如在此目录生成，不应提交）
+/android/
